@@ -1,0 +1,16 @@
+@import 'variables';
+
+.footer-container {
+  height: $h3;
+}
+
+.todo-counter {
+  color: $fourth-color;
+  text: {
+    align: end;
+  }
+
+  p {
+    margin: $xsmall;
+  }
+}

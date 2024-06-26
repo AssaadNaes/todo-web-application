@@ -1,0 +1,66 @@
+@import 'variables.scss';
+
+.todo-container {
+  display: flex;
+  align-items: center;
+  background: lighten($second-color, 10%);
+  height: auto;
+  margin-bottom: 2px;
+  border: {
+    color: darken($first-color, 5%);
+    width: 1px;
+    style: solid;
+    radius: 6px;
+  }
+  padding: 0 $xsmall;
+
+  &:hover {
+    background: $second-color;
+  }
+
+  &__done {
+    @extend .todo-container;
+
+    background: lighten($first-color, 10%);
+
+    &:hover {
+      background: lighten($first-color, 10%);
+    }
+  }
+
+  &__dark {
+    @extend .todo-container;
+
+    border-color: $second-color-dark;
+    background-color: $third-color-dark;
+
+    &:hover {
+      background-color: darken($third-color-dark, 3%);
+    }
+
+    &__done {
+      @extend .todo-container;
+
+      border-color: $second-color-dark;
+      background: #333;
+
+      &:hover {
+        background: #333;
+      }
+    }
+  }
+}
+
+.todo-text {
+  flex-grow: 1;
+  color: $fourth-color;
+  margin-right: 20px;
+  overflow-wrap: break-word; /* Newer equivalent of word-wrap */
+  word-break: break-word; /* Ensure proper word breaking */
+
+  &__dark {
+    @extend .todo-text;
+
+    color: $first-color-dark;
+  }
+}

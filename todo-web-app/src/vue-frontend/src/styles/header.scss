@@ -1,0 +1,22 @@
+@import 'variables.scss';
+
+.header-container {
+  position: relative;
+  background-color: lighten($second-color, 10%);
+  border-radius: 6px;
+  width: 100%;
+
+  &__dark {
+    @extend .header-container;
+
+    background-color: $second-color-dark;
+  }
+}
+
+.header-title {
+  color: $fourth-color;
+  font-size: $h3;
+  margin: {
+    left: $xsmall;
+  }
+}

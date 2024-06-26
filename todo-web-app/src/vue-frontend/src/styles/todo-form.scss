@@ -1,0 +1,68 @@
+@import 'variables';
+@import 'button';
+
+.todo-form {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  margin: {
+    left: $small;
+    right: $small;
+  }
+
+  .textbox-input {
+    flex-grow: 1;
+    height: $h2;
+    color: $fourth-color;
+    background-color: lighten($first-color, 10%);
+    padding: {
+      left: $xsmall;
+    }
+    border: {
+      style: solid;
+      width: 1px;
+      radius: 2px;
+      color: $third-color;
+    }
+
+    &::placeholder {
+      color: lighten($fourth-color, 10%);
+    }
+
+    &__dark {
+      @extend .textbox-input;
+
+      color: $first-color;
+      background-color: darken($third-color, 10%);
+    }
+  }
+
+  input[type='submit'] {
+    @extend .button;
+
+    width: $h0;
+
+    margin: {
+      right: 0;
+      left: $small;
+    }
+
+    &:hover {
+      background: darken($third-color, 10%);
+    }
+  }
+}
+
+.char-count {
+  position: absolute;
+  top: 88%;
+  right: 4px;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 7px;
+  pointer-events: none; /* Prevent interfering with input */
+}
+
+.textbox-container {
+  position: relative;
+}
