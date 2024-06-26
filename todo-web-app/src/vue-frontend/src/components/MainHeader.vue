@@ -1,5 +1,5 @@
 <script setup>
-import '@/styles/moon.scss'
+import '@/styles/theme-icons.scss'
 import '@/styles/headings.scss'
 import '@/styles/header.scss'
 import '@/styles/switch-button.scss'
@@ -25,6 +25,8 @@ defineProps({
   >
     <h1 class="header-title">{{ title }}</h1>
     <label class="switch">
+      <img class="moon" v-if="darkTheme" src="@/images/halbmond.png" alt="Moon" />
+      <img class="sun" v-else src="@/images/sonne.png" alt="Moon" />
       <input type="checkbox" @change="$emit('themeChanged')" />
       <span class="slider round"></span>
     </label>
