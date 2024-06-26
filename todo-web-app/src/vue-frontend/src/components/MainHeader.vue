@@ -1,4 +1,5 @@
 <script setup>
+import '@/styles/moon.scss'
 import '@/styles/headings.scss'
 import '@/styles/header.scss'
 import '@/styles/switch-button.scss'
