@@ -4,7 +4,6 @@
   position: relative;
   background-color: lighten($second-color, 10%);
   border-radius: 6px;
-  width: 100%;
 
   &__dark {
     @extend .header-container;

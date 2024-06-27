@@ -33,7 +33,7 @@ const validateInput = () => {
         $emit('createTodo', getText()), ((todoText = ''), (remainingCharacters = 40))
       "
     >
-      <div class="textbox-container">
+      <div class="textbox-container test-helper">
         <input
           :class="{
             'textbox-input': !darkTheme,

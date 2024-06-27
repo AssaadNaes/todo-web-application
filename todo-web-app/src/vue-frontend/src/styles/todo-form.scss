@@ -4,14 +4,9 @@
 .todo-form {
   display: flex;
   align-items: center;
-  box-sizing: border-box;
-  margin: {
-    left: $small;
-    right: $small;
-  }
 
   .textbox-input {
-    flex-grow: 1;
+    // flex-grow: 1;
     height: $h2;
     color: $fourth-color;
     background-color: lighten($first-color, 10%);

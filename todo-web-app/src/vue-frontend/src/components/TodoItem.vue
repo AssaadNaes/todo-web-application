@@ -39,6 +39,7 @@ defineProps({
           button__done: !todoItem.is_finished,
           'button__done-disabled': todoItem.is_finished
         }"
+        :disabled="todoItem.is_finished"
       >
         Done
       </button>
