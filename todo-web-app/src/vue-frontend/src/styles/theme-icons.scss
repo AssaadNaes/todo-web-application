@@ -1,15 +1,17 @@
+@import 'variables.scss';
+
 .moon {
   position: absolute;
-  top: 3px;
-  right: 45px;
-  width: 20px;
-  height: 20px;
+  top: $icon-top;
+  right: $icon-right;
+  height: $moon-icon-height;
+  width: $moon-icon-width;
 }
 
 .sun {
   position: absolute;
-  top: 3px;
-  right: 45px;
-  width: 20px;
-  height: 20px;
+  // top: $icon-top;
+  right: $icon-right;
+  height: $sun-icon-height;
+  width: $sun-icon-width;
 }

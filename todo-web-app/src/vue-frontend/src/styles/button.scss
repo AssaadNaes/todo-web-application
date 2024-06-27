@@ -2,21 +2,19 @@
 
 .button {
   border: 0;
-  border-radius: 2px;
+  border-radius: 5px;
   color: white;
   background: $third-color;
-  font-size: $small;
+  font-size: $todo-button-font-size;
   line-height: 1.2;
   white-space: nowrap;
-  padding: $xsmall;
-  margin: $xsmall 0.25rem;
+  padding: $small-padding;
+  margin: $small-margin 0.25rem;
+
   cursor: pointer;
 
   &__done {
     @extend .button;
-
-    height: 35px;
-    font-size: $xsmall;
 
     &:hover {
       background: darken($third-color, 10%);
@@ -26,8 +24,6 @@
   &__done-disabled {
     @extend .button;
 
-    height: 35px;
-    font-size: $xsmall;
     background: $first-color;
     color: $third-color;
     cursor: not-allowed;
@@ -35,9 +31,6 @@
 
   &__remove {
     @extend .button;
-
-    height: 35px;
-    font-size: $xsmall;
 
     &:hover {
       background: darken($third-color, 10%);

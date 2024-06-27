@@ -1,6 +1,5 @@
 <script setup>
 import '@/styles/theme-icons.scss'
-import '@/styles/headings.scss'
 import '@/styles/header.scss'
 import '@/styles/switch-button.scss'
 

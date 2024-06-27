@@ -1,11 +1,11 @@
 @use 'sass:math';
 
 // colors
-$first-color: #fff; // Text box and todoItem-border
-$second-color: #acdcee; // Header background and todoItem background
-$third-color: #475053; // Buttons background
-$fourth-color: #0981ad; // Fonts
-$background-color: #fff; // Body background
+$first-color: #fff;
+$second-color: #acdcee;
+$third-color: #475053;
+$fourth-color: #0981ad;
+$background-color: #fff;
 
 // darktheme colors
 $first-color-dark: #ced9da;
@@ -13,11 +13,30 @@ $second-color-dark: #08475e;
 $third-color-dark: #25292b;
 $background-color-dark: #333;
 
-// ratio
+// ratios
 $base: 1.2;
-$h0: math.pow($base, 8.5) + rem;
-$h1: math.pow($base, 6) + rem;
-$h2: math.pow($base, 5) + rem;
-$h3: math.pow($base, 4) + rem;
-$small: math.div(1, $base) + rem;
-$xsmall: math.div(1, math.pow($base, 2)) + rem;
+$small-padding: math.div(1.5, $base) + rem;
+$small-margin: math.div(1.5, $base) + rem;
+$large-margin: math.div(2, $base) + rem;
+$header-title-font-size: math.pow($base, 7) + rem;
+$switch-width: math.pow($base, 5.5) + rem;
+$switch-height: math.pow($base, 3) + rem;
+$switch-top: math.pow($base, 3.5) + rem;
+$slider-height: math.pow($base, 1.5) + rem;
+$slider-width: math.pow($base, 1.5) + rem;
+$slider-bottom: 0.22rem;
+$icon-top: 3px;
+$icon-right: 50px;
+$moon-icon-height: 1.3rem;
+$moon-icon-width: 1.3rem;
+$sun-icon-height: 1.5rem;
+$sun-icon-width: 1.5rem;
+$textbox-height: math.pow($base, 8) + rem;
+$textbox-width: math.pow($base, 15) + rem;
+$textbox-font-size: math.pow($base, 2) + rem;
+$placeholder-font-size: math.pow($base, 1.5) + rem;
+$char-count-font-size: math.div(1, $base) + rem;
+$submit-button-width: math.pow($base, 12) + rem;
+$todo-font-size: math.pow($base, 3) + rem;
+$todo-button-font-size: math.pow($base, 1) + rem;
+$todo-counter-font-size: math.pow($base, 2) + rem;

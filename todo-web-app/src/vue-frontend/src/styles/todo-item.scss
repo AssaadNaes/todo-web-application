@@ -12,7 +12,7 @@
     style: solid;
     radius: 6px;
   }
-  padding: 0 $xsmall;
+  padding: 0 $small-padding;
 
   &:hover {
     background: $second-color;
@@ -52,9 +52,10 @@
 }
 
 .todo-text {
+  font-size: $todo-font-size;
   flex-grow: 1;
   color: $fourth-color;
-  margin-right: 20px;
+  margin-right: $large-margin;
   overflow-wrap: break-word; /* Newer equivalent of word-wrap */
   word-break: break-word; /* Ensure proper word breaking */
 

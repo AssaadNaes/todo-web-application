@@ -7,11 +7,13 @@
 
   .textbox-input {
     // flex-grow: 1;
-    height: $h2;
+    height: $textbox-height;
+    width: $textbox-width;
     color: $fourth-color;
+    font-size: $textbox-font-size;
     background-color: lighten($first-color, 10%);
     padding: {
-      left: $xsmall;
+      left: $small-padding;
     }
     border: {
       style: solid;
@@ -22,6 +24,7 @@
 
     &::placeholder {
       color: lighten($fourth-color, 10%);
+      font-size: $placeholder-font-size;
     }
 
     &__dark {
@@ -35,11 +38,11 @@
   input[type='submit'] {
     @extend .button;
 
-    width: $h0;
+    width: $submit-button-width;
 
     margin: {
       right: 0;
-      left: $small;
+      left: $small-margin;
     }
 
     &:hover {
@@ -54,7 +57,7 @@
   right: 4px;
   transform: translateY(-50%);
   color: #999;
-  font-size: 7px;
+  font-size: $char-count-font-size;
   pointer-events: none; /* Prevent interfering with input */
 }
 

@@ -5,7 +5,7 @@ defineProps(['todoCount'])
 </script>
 
 <template>
-  <div class="footer-container todo-counter">
+  <div class="todo-counter">
     <p>
       Total todos: <span>{{ todoCount }}</span>
     </p>
