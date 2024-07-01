@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   postgres:
     image: 'postgres:latest'
@@ -7,3 +9,26 @@ services:
       - 'POSTGRES_USER=publicUser'
     ports:
       - '2345:5432'
+    container_name: database
+
+  spring-boot-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8080:8080'
+    depends_on:
+      - postgres
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/todo_web_app
+      SPRING_DATASOURCE_USERNAME: publicUser
+      SPRING_DATASOURCE_PASSWORD: public
+    container_name: backend-api
+
+  vue-frontend:
+    build:
+      context: .
+      dockerfile: /src/vue-frontend/Dockerfile
+    ports:
+      - '5173:5173'
+    container_name: frontend
